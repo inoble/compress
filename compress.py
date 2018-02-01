@@ -1,7 +1,7 @@
 # Compress.py - by Ian Noble (iannoble.org.uk | iannoble@gmail.com | github.com/inoble)
 # Tkinter GUI to select and compress directories to a file, backup.zip
 
-import os, shutil
+import shutil
 from tkinter import *
 from tkinter import filedialog	
 
