@@ -8,22 +8,21 @@ from tkinter import filedialog
 	
 # change location of directory to compress
 def select_loc():
+	""" Return selected directory location. """
 	
 	# delete any previous location information in textbox and status text
 	entry.delete(0, 'end')
 	status_text.config(text='')
 	
-	# Tkinter filedialog to select directory using GUI
 	location = filedialog.askdirectory()
 	
-	# populate textbox with location of directory found using filedialog
 	entry.insert(END, location)
 
 	
 # find directory location and compress directory
 def compress():
+	""" Compress selected directory location. """
 	
-	# directory location to compress 
 	location = entry.get()
 	
 	# if textbox is empty, prompt user to select a directory to compress
