@@ -6,7 +6,6 @@ from tkinter import *
 from tkinter import filedialog	
 
 	
-# change location of directory to compress
 def select_loc():
 	""" Return selected directory location. """
 	
@@ -19,7 +18,6 @@ def select_loc():
 	entry.insert(END, location)
 
 	
-# find directory location and compress directory
 def compress():
 	""" Compress selected directory location. """
 	
